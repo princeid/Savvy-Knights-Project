@@ -1,0 +1,62 @@
+<form method="post" action="form.php">
+    <input name="name" required="required" placeholder="Your Name">
+    <input name="email" type="email" required="required" placeholder="Your Email">
+
+    <div class="clearfix"> </div>
+    <textarea name="message" cols="20" rows="5" required="required" placeholder="Message"></textarea>
+    <div class="submit">
+        <input id="submit" name="submit" type="submit" value="Submit">
+    </div>
+</form>
+
+<form method="post" name="FrmEnquiry" id="FrmEnquiry" action="" onsubmit="sendEnquiryform();">
+    <input name="name" id="name" required="required" placeholder="Your Name">
+    <input name="email" id="email" type="email" required="required" placeholder="Your Email">
+
+    <div class="clearfix"> </div>
+    <textarea name="message" id="message" cols="20" rows="5" required="required" placeholder="Message"></textarea>
+    <div class="submit">
+        <input id="submit" name="submit" type="submit" value="Submit">
+    </div>
+</form>
+
+<span id="sucessMessage"> Message sent succesfully</span>
+
+<script type="text/javascript">
+    function sendEnquiryform(){
+        var name=$('#name').val();
+        var email=$('#email').val();
+        var message=$('#message').val();
+        $.post("send_mail.php",'name='+name+'&email='+email'&message='+message,function(result,status,xhr) {
+                if( status.toLowerCase()=="error".toLowerCase() )
+                { alert("An Error Occurred.."); }
+                else { 
+                    //alert(result);
+                    $('#sucessMessage').html(result);
+                }
+            })
+            .fail(function(){ alert("something went wrong. Please try again") });
+    }
+</script>
+
+<?php
+$name = $_POST['name'];
+$email = $_POST['email'];
+$message = $_POST['message'];
+$from = 'From: agriindiaexp.com'; 
+$to = 'shridhar.kagi@gmail.com'; 
+$subject = 'Email Inquiry';
+
+$body = "From: $name\n E-Mail: $email\n Message:\n $message";
+
+if ($_POST['submit']) {
+    if (mail ($to, $subject, $body, $from)) { 
+       $success = "Message successfully sent";
+    } else {
+        $success = "Message Sending Failed, try again";
+    }
+}
+?>
+
+
+

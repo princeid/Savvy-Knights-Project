@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Savvy knights Chess Academy</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+        <!-- NEW BOOTSTRAP CSS-->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Google fonts - Roboto-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700">
+    <!-- Bootstrap Select-->
+    <link rel="stylesheet" href="vendor/bootstrap-select/css/bootstrap-select.min.css">
+    <!-- owl carousel-->
+    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.lightblue.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon and apple touch icons-->
+    <link rel="shortcut icon" href="img/sk-icon22.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon-152x152.png">
+    <!-- Javascript files-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper.js/umd/popper.min.js"> </script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="vendor/waypoints/lib/jquery.waypoints.min.js"> </script>
+    <script src="vendor/jquery.counterup/jquery.counterup.min.js"> </script>
+    <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="vendor/owl.carousel2.thumbs/owl.carousel2.thumbs.min.js"></script>
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+    <script src="vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="vendor/jquery.scrollto/jquery.scrollTo.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/front.js"></script>
+  </head>
+  
+  <body>
+    <div id="all">
+      <!-- Top bar-->
+      <div class="top-bar">
+        <div class="container">
+          <div class="main-top-bar row d-flex align-items-center">
+            <div class="col-md-2">
+            <a href="index.html" class="navbar-brand home"><img src="img/mainlogo.png" alt="Savvy Knights Logo" class="logo-image" class="d-none d-lg-inline-block">
+              </a>
+            </div>
+            <div class="col-md-6 d-md-block d-none">
+              <p class="top-text">admin@savvyknights.com</p>
+            </div>
+            <div class="col-md-2">
+              <div class="d-flex justify-content-md-end justify-content-between">
+                <ul class="social-custom list-inline">
+                  <li class="list-inline-item"><a href="https://web.facebook.com/Savvy-knights-Chess-372722209988055/" target="blank"><i class="fa fa-facebook"></i></a></li>
+                  <li class="list-inline-item"><a href="https://twitter.com/SavvyKnights" target="blank"><i class="fa fa-twitter"></i></a></li>
+                  <li class="list-inline-item"><a href="https://www.instagram.com/savvyknights.chess/" target="blank"><i class="fa fa-instagram instagram"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="login"><!--  <a href="support-our-work.html" class="signup-btn"><i class="fa fa-credit-card"></i><span class="d-none d-md-inline-block">DONATE</span></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+                  <a href="invite-us.html" class="invite-us signup-btn btn-lg large-button"><!-- <i class="fa fa-university"> --></i><span class="d-none d-md-inline-block glyphicon glyphicon-print invite"></span>INVITE US</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Top bar end-->
+      
+      <!-- Navbar Start-->
+      <header class="nav-holder make-sticky text-justify text-xl-center">
+        <div id="navbar" role="navigation" class="navbar navbar-expand-md text-justify">
+          <div class="container text-justify">
+              <!-- <a href="index.html" class="navbar-brand home"><img src="img/sv.png" alt="Universal logo" class="logo-image" class="d-none d-lg-inline-block">
+              </a> -->
+            <button type="button" data-toggle="collapse" data-target="#navigation" class="navbar-toggler btn-template-outline"><span class="sr-only">Toggle navigation</span><i class="fa fa-align-justify"></i></button>
+            <div id="navigation" class="navbar-collapse collapse" class="standard-nav visible-lg">
+              <ul class="nav navbar-nav ml-auto" class="menu-bar-up" >
+                <!-- new class begins: nav-links-main -->
+                <li class="home-page-menu-font vertical-bar"><a class="nav-links-main" href="index.html">Home</a></li>
+                <li class="nav-item dropdown vertical-bar"><a href="javascript: void(0)" data-toggle="dropdown" class="dropdown-toggle nav-links-main">About Us <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a href="who-we-are.html" class="nav-link">Who We Are</a></li>
+                    <!-- <li class="dropdown-item"><a href="our-policies.html" class="nav-link">Policies</a></li> -->
+                    <!-- <li class="dropdown-item"><a href="team.html" class="nav-link">Team</a></li> -->
+                    <li class="dropdown-item"><a href="our-sponsors.html" class="nav-link">Sponsors</a></li>
+                  </ul>
+                </li>
+                <li class="vertical-bar"><a class="nav-links-main" href="why-chess.html">Why Chess</a></li>
+                <!-- <li class="vertical-bar"><a class="nav-links-main" href="support-our-work.html">Support Our Work</a></li> -->
+                <!-- ========== FULL WIDTH MEGAMENU END ==================-->
+                <!-- ========== Contact dropdown ==================-->
+                <li class="nav-item dropdown vertical-bar"><a href="javascript: void(0)" data-toggle="dropdown" class="dropdown-toggle nav-links-main">Our Presence <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <!-- <li class="dropdown-item"><a href="schools.html" class="nav-link">Schools</a></li> -->
+                    <li class="dropdown-item"><a href="events.html" class="nav-link">Events</a></li>
+                    <li class="dropdown-item"><a href="invite-us.html" class="nav-link">Invite Us</a></li>
+                  </ul>
+                </li>
+                <li class="vertical-bar"><a class="nav-links-main" href="chess-tutors.html" >Chess Tutors</a>
+                <li class="vertical-bar"><a href="faq.html" class="nav-links-main">FAQs</a></li>
+                <li class="vertical-bar"><a class="nav-links-main" href="contact.html" >Contact</a>
+                <!-- ========== Contact dropdown end ==================-->
+              </ul>
+            </div>
+                        <div id="search" class="collapse clearfix">
+              <form role="search" class="navbar-form">
+                <div class="input-group">
+                  <!-- <input type="text" placeholder="Search" class="form-control"><span class="input-group-btn"> -->
+                    <!-- <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button></span> -->
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Navbar End-->
+
+  <!-- Header for mobile-->
+
+<div class="mob-container" style="display: none;">
+        <div class="mob">
+            <p class="num">admin@savvyknights.com</p>
+            <div class="icons">
+                <ul class="social-custom list-inline">
+                  <li class="list-inline-item"><a href="https://web.facebook.com/Savvy-knights-Chess-372722209988055/" target="blank"><i class="fa fa-facebook"></i></a></li>
+                  <li class="list-inline-item"><a href="https://twitter.com/SavvyKnights" target="blank"><i class="fa fa-twitter"></i></a></li>
+                  <li class="list-inline-item"><a href="https://www.instagram.com/savvyknights.chess/" target="blank"><i class="fa fa-instagram instagram"></i></a></li>
+                </ul>
+              </div>
+          </div>
+          
+        <nav class="navbar navbar-expand-md navbar-light text-justify" id="navbar">
+      <!-- Brand -->
+      <a href="index.html" class="navbar-brand home mobilelogo"><img src="img/mobilelogo.png" alt="Savvy Knights logo" class="logo"></a>
+
+      <!-- <a href="invite-us.html" class="invite-btn"><i class="fa fa-university"><span class="d-none d-md-inline-block glyphicon glyphicon-print invite"></span>INVITE US</a> -->
+
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler btn-template-outline menubutton" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <i class="fa fa-bars"></i><span class="menu-text"> Menu</span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar" class="standard-nav visible-lg">
+        <ul class="nav navbar-nav ml-auto" class="menu-bar-up" >
+                <!-- new class begins: nav-links-main -->
+                <li class="home-page-menu-font vertical-bar"><a class="nav-links-main" href="index.html">Home</a></li>
+                <li class="nav-item dropdown vertical-bar"><a href="javascript: void(0)" data-toggle="dropdown" class="dropdown-toggle nav-links-main">About Us <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a href="who-we-are.html" class="nav-link">Who We Are</a></li>
+                    <!-- <li class="dropdown-item"><a href="our-policies.html" class="nav-link">Policies</a></li> -->
+                    <!-- <li class="dropdown-item"><a href="team.html" class="nav-link">Team</a></li> -->
+                    <li class="dropdown-item"><a href="our-sponsors.html" class="nav-link">Sponsors</a></li>
+                  </ul>
+                </li>
+                <li class="vertical-bar"><a class="nav-links-main" href="why-chess.html">Why Chess</a></li>
+                <!-- <li class="vertical-bar"><a class="nav-links-main" href="support-our-work.html">Support Our Work</a></li> -->
+                <!-- ========== FULL WIDTH MEGAMENU END ==================-->
+                <!-- ========== Contact dropdown ==================-->
+                <li class="nav-item dropdown vertical-bar"><a href="javascript: void(0)" data-toggle="dropdown" class="dropdown-toggle nav-links-main">Our Presence <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <!-- <li class="dropdown-item"><a href="schools.html" class="nav-link">Schools</a></li> -->
+                    <li class="dropdown-item"><a href="events.html" class="nav-link">Events</a></li>
+                    <li class="dropdown-item"><a href="invite-us.html" class="nav-link">Invite Us</a></li>
+                  </ul>
+                </li>
+                <li class="vertical-bar"><a class="nav-links-main" href="chess-tutors.html" >Chess Tutors</a></li>
+                <li class="vertical-bar"><a href="faq.html" class="nav-links-main">FAQs</a></li>
+                <li class="vertical-bar"><a class="nav-links-main" href="contact.html" >Contact</a></li>
+                <!-- ========== Contact dropdown end ==================-->
+             </ul>
+      </div> 
+  </nav>
+  </div>
+
+
+      <!-- Header for mobile End-->
+
+
+<div class="carousel-main">
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item item1 active">
+      <img src="img/homeslide.jpg">
+      <div class="carousel-caption d-md-block">
+          <h1 class="display-1">EDUCATIONAL CHESS</h1>
+          <p>Empowering kids through chess</p>
+          <!-- <p class="intro-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. </p> -->
+      </div>
+</div>
+    <div class="carousel-item item2">
+      <img src="img/kids.jpg">
+        <div class="carousel-caption d-md-block">
+          <h1 class="display-1">CHESS MATTERS</h1>
+          <p>Change your child's approach towards learning</p>
+          <!-- <p class="intro-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. </p> -->
+        </div>
+    </div>
+    <div class="carousel-item item3">
+      <img src="img/slideimage.jpg">
+        <div class="carousel-caption d-md-block">
+          <h1 class="display-1">IT'S A LIFESTYLE</h1>
+          <p>We are currently seeking passionate chess tutors</p>
+          <!-- <p class="intro-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.</p> -->
+        </div>
+  </div>
+s
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</div>
+
+      <!-- Carousel for mobile -->
+<div  class="carousel-mobile" style="display: none;">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item item1 active">
+      <img src="img/mobileslide1.jpg">
+      <div class="carousel-caption d-md-block">
+          <h1 class="display-m">EDUCATIONAL CHESS</h1>
+          <p>Empowering kids through chess.</p>
+          <!-- <p class="intro-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. </p> -->
+      </div>
+</div>
+    <div class="carousel-item item2">
+      <img src="img/mobileslide2.jpg">
+        <div class="carousel-caption d-md-block">
+          <h1 class="display-m">CHESS MATTERS</h1>
+          <p>Change your child's approach towards learning.</p>
+          <!-- <p class="intro-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. </p> -->
+        </div>
+    </div>
+    <div class="carousel-item item3">
+      <img src="img/mobileslide3.jpg">
+        <div class="carousel-caption d-md-block">
+          <h1 class="display-m">IT'S A LIFESTYLE</h1>
+          <p>We are currently seeking passionate chess tutors.</p>
+          <!-- <p class="intro-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.</p> -->
+        </div>
+  </div>
+
+    <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a> -->
+  </div>
+</div>
+</div>
+
+<!-- Carousel for mobile end-->
+
+  <section class="bar no-mb">
+        <div data-animate="fadeInUp" class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <!-- <div class="heading text-center">
+                <h2>Chess For Kids</h2>
+              </div> -->
+              <div class="row portfolio-showcase">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 vid">
+                <!--   <div class="image"><img src="img/kids.jpg" alt="" class="img-fluid"></div> -->
+                    <video width="520" height="290" controls>
+  						<source src="img/videoplayback.mp4" type="video/mp4">
+  						<source src="movie.ogg" type="video/ogg">
+  						Your browser does not support the video tag.
+					</video>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <h3 class="chess-for-kids">Chess For Kids</h3>
+                  <p class="lead">Our goal is to change our children's approach towards learning by making classroom activities more fun.</p>
+                  <p class="chess-text">We seek to integrate chess in as many primary schools in Nigeria as possible to help foster the students' progress in subjects that require critical thinking skills such as quantitative reasoning, mathematics, and general sciences. Our aim extends beyond just classroom activities. <a href="who-we-are.html" class="external">Read More...</a></p>
+                </div>
+              </div>
+              <div class="heading text-center">
+                <div class="heading text-center">
+                <h3>Chess and Education</h3>
+              </div>
+              <div class="row portfolio text-center no-space">
+                <div class="col-md-4">
+                  <div class="box-image">
+                    <div class="image"><img src="img/galleryb.jpg" alt="" class="img-fluid">
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="box-image">
+                    <div class="image"><img src="img/gallery3.jpg" alt="" class="img-fluid">
+                      <div class="d-none d-lg-block align-items-center justify-content-center">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="box-image">
+                    <div class="image"><img src="img/gallery4.jpg" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="box-image">
+                    <div class="image"><img src="img/galleryc.jpg" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="box-image">
+                    <div class="image"><img src="img/gallery7.jpg" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="box-image">
+                    <div class="image"><img src="img/giantchess2.jpg" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+<!--                 <div class="col-md-4">
+                  <div class="box-image">
+                    <div class="image"><img src="img/gallery4.jpg" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="box-image">
+                    <div class="image"><img src="img/galleryc.jpg" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="box-image">
+                    <div class="image"><img src="img/gallery8.jpg" alt="" class="img-fluid" >
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+
+
+
+<!-- <div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 9</div>
+          <img src="img/galleryb.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 9</div>
+          <img src="img/gallery3.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 9</div>
+          <img src="img/giantchess.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">4 / 9</div>
+          <img src="img/galleryd.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 9</div>
+          <img src="img/gallery7.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">6 / 9</div>
+          <img src="img/giantchess2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">7 / 9</div>
+          <img src="img/gallery4.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">8 / 9</div>
+          <img src="img/galleryc.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">9 / 9</div>
+          <img src="img/gallery8.jpg" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+        <div class="row">
+          <div class="column">
+          <img class="demo cursor" src="img/galleryb.jpg" style="width:100%" onclick="currentSlide(1)" alt="Image 1 description">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/gallery3.jpg" style="width:100%" onclick="currentSlide(2)" alt="Image 2 description">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/giantchess.jpg" style="width:100%" onclick="currentSlide(3)" alt="Image 3 description">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/galleryd.jpg" style="width:100%" onclick="currentSlide(4)" alt="Image 4 description">
+        </div>
+         <div class="column">
+          <img class="demo cursor" src="img/gallery7.jpg" style="width:100%" onclick="currentSlide(5)" alt="Image 5 description">
+        </div>
+            <div class="column">
+          <img class="demo cursor" src="img/giantchess2.jpg" style="width:100%" onclick="currentSlide(6)" alt="Image 6 description">
+        </div>
+            <div class="column">
+          <img class="demo cursor" src="img/gallery4.jpg" style="width:100%" onclick="currentSlide(7)" alt="Image 7 description">
+        </div>
+            <div class="column">
+          <img class="demo cursor" src="img/galleryc.jpg" style="width:100%" onclick="currentSlide(8)" alt="Image 8 description">
+        </div>
+            <div class="column">
+          <img class="demo cursor" src="img/gallery8.jpg" style="width:100%" onclick="currentSlide(9)" alt="Image 9 description">
+        </div>
+      </div>
+  </div>
+</div> -->
+</section>
+
+    <section class="bar background-pentagon no-mb">
+        <div class="container">
+          <div class="row showcase text-center">
+            <div class="col-md-3 col-sm-6">
+              <div class="item">
+                <div class="icon-outlined icon-sm icon-thin"><i class="fa fa-plane"></i></div>
+                <h4><span class="h1 counter">2</span><br>States</span></h4>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="item">
+                <div class="icon-outlined icon-sm icon-thin"><i class="fa fa-institution"></i></div>
+                <h4><span class="h1 counter">4</span><br>Schools</h4>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="item">
+                <div class="icon-outlined icon-sm icon-thin"><i class="fa fa-users"></i></div>
+                <h4><span class="h1 counter">16</span><br>Staffs</h4>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="item">
+                <div class="icon-outlined icon-sm icon-thin"><i class="fa fa-trophy"></i></div>
+                <h4><span class="h1 counter">0</span><br>Competitions</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+      <section class="bar bg-gray">
+        <div class="container">
+          <ul class="list-unstyled owl-carousel customers no-mb">
+            <li class="item"><img src="img/logo1.png" alt="" class="img-fluid"></li>
+            <li class="item"><img src="img/logo3.png" alt="" class="img-fluid"></li>
+            <li class="item"><img src="img/logo4.png" alt="" class="img-fluid"></li>
+            <li class="item"><img src="img/customer-4.png" alt="" class="img-fluid"></li>
+            <li class="item"><img src="img/logo2.png" alt="" class="img-fluid"></li>
+            <li class="item"><img src="img/aican.png" alt="" class="img-fluid"></li>
+          </ul>
+        </div>
+      </section>
+    <!-- GET IT-->
+      <div class="get-it">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center p-3">
+              <h3>"I don’t believe in psychology, I believe in good moves."</h3>
+              <p class="get-it-author">Bobby Fischer</p><br/>
+              <!-- <p class="quote">American chess grandmaster</p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER -->
+      <footer class="main-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <h4 class="h6">About Us</h4>
+              <p>Savvy Knights is an organization dedicated to improving children's way of learning by introducing them to the game of chess.</p>
+              <hr>
+              <p class="newsletter">Stay up-to-date with Savvy knights</p>
+              <form name="newsletter" id="newsletter" method="post" action="newsletter.php" class="ajax3" validate>
+                <div class="input-group">
+                  <input name="email" id="email"  type="email" class="form-control" placeholder="youremail@example.com" required>
+
+                  <p style="display: none;">Leave this empty:
+                                <br /><input name="url" /></p>
+                  
+                  <div class="input-group-append">
+                    <button name="submit" id="submit" type="submit" class="btn btn-secondary" title="Sign Up"><i class="fa fa-send"></i></button>
+                  </div>
+                </div>
+                <span id="response3" class="text-success"></span>
+              </form>
+              <hr class="d-block d-lg-none">
+            </div>
+            <div class="col-lg-4">
+              <h4 class="h6"> Upcoming Events </h4>
+              <ul class="list-unstyled footer-blog-list">
+                <li class="d-flex align-items-center">
+                  <div class="image"><img src="img/footerimg.jpg" alt="..." class="img-fluid"></div>
+                  <div class="event-text">
+                    <p class="mb-0">Upcoming events will be updated soon.<br/>
+                    <!-- 15<sup>th </sup>April, 2019 --></p>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div class="image"><img src="img/footerimg.jpg" alt="..." class="img-fluid"></div>
+                  <div class="event-text">
+                    <p class="mb-0">Upcoming events will be updated soon.<br/>
+                    <!-- 10<sup>th </sup>September, 2019 --></p>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div class="image"><img src="img/footerimg.jpg" alt="..." class="img-fluid"></div>
+                  <div class="event-text">
+                    <p class="mb-0">Upcoming events will be updated soon.<br/>
+                    <!-- 3<sup>rd </sup>December, 2019 --></p>
+                  </div>
+                </li>
+              </ul>
+              <hr class="d-block d-lg-none">
+            </div>
+            <div class="col-lg-4">
+              <h4 class="h6">Contact</h4>
+                  <p><i class="fa fa-map-marker" aria-hidden="true"></i> 14 Orogbum Crescent, GRA Phase 2, <br>Portharcourt, Nigeria.<br><i class="fa fa-phone" aria-hidden="true"></i> +234-818 920 5469<br> <i class="fa fa-clock-o" aria-hidden="true"></i> Working hours: Mon - Fri 9AM - 5PM
+                    <br><br>
+                    <div>
+                      <ul class="social-custom-footer list-inline">
+                      <li class="list-inline-item"><a href="https://web.facebook.com/Savvy-knights-Chess-372722209988055/" target="blank"><i class="fa fa-facebook-official"></i></a></li>
+                      <li class="list-inline-item"><a href="https://twitter.com/SavvyKnights" target="blank"><i class="fa fa-twitter-square"></i></a></li>
+                      <li class="list-inline-item"><a href="https://www.instagram.com/savvyknights.chess/" target="blank"><i class="fa fa-instagram bottom-ig"></i></a></li>
+                    </div>
+                </ul>
+                  </p>
+                  
+				<!-- <a href="login.jsp" class="login-btn btn">Login</a> -->
+              <hr class="d-block d-lg-none">
+            </div>
+          </div>
+        </div>
+        <div class="copyrights">
+          <div class="container">
+          	<hr class="footer-line">
+            <div class="row">
+              <div class="col-lg-4 text-center-md">
+                <p>&copy; 2019. savvyknights.com </p>
+              </div>
+              <div class="col-lg-8 text-right text-center-md">
+                <p> All Rights Reserved</p>
+                <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
